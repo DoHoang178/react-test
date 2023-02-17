@@ -1,0 +1,37 @@
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.container-nav .logo {
+  display: flex;
+  align-items: flex-end;
+}
+.container-nav .logo .logo1 {
+  width: 19.88px;
+  height: 19.88px;
+  background: #9c69e2;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+.container-nav .logo .logo2 {
+  width: 19.88px;
+  height: 34.78px;
+  background: #f063b8;
+  border-radius: 20px;
+}
+.container-nav .signIn {
+  width: 208.7px;
+  height: 59.63px;
+  background: #9c69e2;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: #FFFFFF;
+  text-align: center;
+  align-items: center;
+}

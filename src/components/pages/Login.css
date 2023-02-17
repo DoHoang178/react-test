@@ -1,0 +1,26 @@
+.login-container{
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+input{
+    border: 1px solid gray;
+    width: 300px;
+    height: 36px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.signIn {
+    width: 208.7px;
+    height: 59.63px;
+    background: #9c69e2;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+  }
+  

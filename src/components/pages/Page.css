@@ -1,0 +1,120 @@
+.container-page {
+  background-image: url(../../img/image1\ 1.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 60% auto;
+}
+.container-page h1 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  color: #212353;
+  padding-top: 150px;
+}
+.container-page p {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #4b5d68;
+  width: 50%;
+  margin-top: 50px;
+}
+.container-page .Learn {
+  width: 168.94px;
+  height: 59.63px;
+  background: #9c69e2;
+  border-radius: 50px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 160%;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  color: #ffffff;
+}
+.features {
+  text-align: center;
+  align-items: center;
+}
+.features h1 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  align-items: center;
+  text-align: center;
+
+  color: #212353;
+}
+.features p {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #4b5d68;
+}
+.pageCard{
+  margin-bottom: 100px;
+}
+.Pcard {
+  position: relative;
+  border: 0;
+}
+.bg-card {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.logo-card {
+  position: absolute;
+  left: 20%;
+  top: 100px;
+  z-index: 2;
+}
+
+.info {
+  /* width: 40%; */
+  padding-top: 10%;
+  padding-left: 58%;
+  padding-right: 8%;
+  z-index: 3;
+}
+.info h2 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  align-items: center;
+  color: #212353;
+}
+.info p {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4b5d68;
+}
+.info h4 {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
