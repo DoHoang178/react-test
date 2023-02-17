@@ -1,13 +1,26 @@
+import axios from "axios";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 function NavBar() {
-  var x = localStorage.getItem("accessToken");
+  const navigate = useNavigate();
+  const accessToken = localStorage.getItem("accessToken");
 
-  console.log("x", x);
+  const handleLogout = () => {
+    console.log("logout");
+    axios
+      .post("https://test-react.agiletech.vn/auth/login")
+      .then(function (response) {
+        localStorage.removeItem("accessToken");
+        navigate("/");
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  };
 
   const DisplayButton = () => {
-    if (!x || x === "undefined") {
+    if (!accessToken) {
       return (
         <Link to={"/login"}>
           <button className="signIn">Sign In</button>
@@ -17,10 +30,14 @@ function NavBar() {
       return (
         <div>
           <Link to={"/profile"}>
-            <button className="signIn" style={{ marginRight: "20px" }}>Profile</button>
+            <button className="signIn" style={{ marginRight: "20px" }}>
+              Profile
+            </button>
           </Link>
 
-          <button className="signIn">Log out</button>
+          <button className="signIn" onClick={handleLogout}>
+            Log out
+          </button>
         </div>
       );
     }

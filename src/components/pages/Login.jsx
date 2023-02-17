@@ -18,27 +18,12 @@ export default function Login() {
       })
       .then(function (response) {
         localStorage.setItem("accessToken", response?.data?.accessToken);
-        console.log(localStorage.getItem("accessToken"));
-        if(localStorage.getItem("accessToken") !== undefined){
-                  navigate("/");
-        }
-
+        navigate("/");
       })
       .catch(function (error) {
         console.log(error);
       });
-
   };
-//var x = ;
-  // console.log("x", x)
-  // const linkButton =() =>{
-  //   if (!x || x === "undefined") {
-  //     <Navigate to="/login"/>
-  //   }
-  //   else {
-  //     <Navigate to="/page"/>
-  //   }
-  // }
   const [data, setData] = useState("");
 
   useEffect(() => {
@@ -51,11 +36,8 @@ export default function Login() {
       .get("https://test-react.agiletech.vn/posts", config)
       .then(function (response) {
         setData(response?.data?.posts);
-        // console.log("res", response);
       });
   }, []);
-
-  console.log("data", data);
 
   return (
     <>
